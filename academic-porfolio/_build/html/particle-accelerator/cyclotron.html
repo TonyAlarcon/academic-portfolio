@@ -1,0 +1,725 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Cyclotron Code &#8212; Academic Portfolio</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Vulnerability Prediction" href="../vulnerability-prediction/project-overview.html" />
+    <link rel="prev" title="Introduction" href="intro.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Academic Portfolio</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../markdown.html">
+   Markdown Files
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../notebooks.html">
+   Content with notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../markdown-notebooks.html">
+   Notebooks with MyST Markdown
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="overview.html">
+   Particle Accelerator Simulation
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="intro.html">
+     Introduction
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Cyclotron Code
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../vulnerability-prediction/project-overview.html">
+   Vulnerability Prediction
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../vulnerability-prediction/embeddings.html">
+     Open and Explore Test, Train and Validation Datasets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../vulnerability-prediction/code-embeddings.html">
+     Source Code Embeddings
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../vulnerability-prediction/cnn.html">
+     CNN
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../amazon-vision/project-overview.html">
+   Amazon Vision Robotics
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../apriori.html">
+   Apriori Algorithm
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/particle-accelerator/cyclotron.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fparticle-accelerator/cyclotron.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/particle-accelerator/cyclotron.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Cyclotron Code</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="cyclotron-code">
+<h1>Cyclotron Code<a class="headerlink" href="#cyclotron-code" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">math</span> <span class="k">as</span> <span class="nn">math</span> 
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">mpl_toolkits.mplot3d</span> <span class="kn">import</span> <span class="n">Axes3D</span>
+<span class="kn">from</span> <span class="nn">decimal</span> <span class="kn">import</span> <span class="n">Decimal</span>
+
+<span class="n">c</span> <span class="o">=</span> <span class="mf">3.0E08</span>
+<span class="n">e</span> <span class="o">=</span> <span class="p">[</span><span class="mf">5000000.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">]</span> 
+<span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.5</span><span class="p">]</span>
+<span class="n">bmag</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Particle</span><span class="p">:</span> 
+	<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">vel</span><span class="p">,</span> <span class="n">mass</span><span class="p">,</span> <span class="n">charge</span><span class="p">):</span> 
+		<span class="bp">self</span><span class="o">.</span><span class="n">pos</span> <span class="o">=</span> <span class="n">pos</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">vel</span> <span class="o">=</span> <span class="n">vel</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">mass</span> <span class="o">=</span> <span class="n">mass</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">charge</span> <span class="o">=</span> <span class="n">charge</span>
+	
+	<span class="k">def</span> <span class="nf">radius</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+		<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+		<span class="n">speed</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vel</span><span class="p">)</span>
+		<span class="n">radius</span> <span class="o">=</span> <span class="n">speed</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">mass</span> <span class="o">/</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">charge</span> <span class="o">*</span> <span class="n">b</span><span class="p">)</span>
+		<span class="k">return</span> <span class="n">radius</span>
+		
+	<span class="k">def</span> <span class="nf">period</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+		<span class="n">field</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+		<span class="n">period</span> <span class="o">=</span> <span class="mf">2.0</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">mass</span> <span class="o">/</span><span class="p">(</span> <span class="n">field</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">charge</span> <span class="p">)</span>
+		<span class="k">return</span> <span class="n">period</span>
+		
+
+
+
+<span class="c1"># choose a proton as the particle, describe in 3 Dimension </span>
+<span class="n">proton</span> <span class="o">=</span> <span class="n">Particle</span><span class="p">([</span><span class="mf">0.00</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.05</span><span class="o">*</span><span class="n">c</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">],</span> <span class="mf">1.67E-27</span><span class="p">,</span> <span class="o">+</span><span class="mf">1.60E-19</span><span class="p">)</span>
+
+<span class="n">gap_size</span> <span class="o">=</span> <span class="mf">.5</span> <span class="o">*</span> <span class="n">proton</span><span class="o">.</span><span class="n">radius</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+
+
+<span class="c1">###################################################################################</span>
+<span class="c1">#	Given position and velocity, the function returns acceleration as an array in 3D</span>
+<span class="c1">#	The magnetic field is applied where x &gt; 0 or  x &lt; - gap_size</span>
+<span class="c1">#	The electric field is applied where x &lt; 0 and x &gt; - gap_size</span>
+<span class="c1">###################################################################################</span>
+
+<span class="n">jumps</span> <span class="o">=</span><span class="mi">0</span>
+<span class="n">jumps_max</span> <span class="o">=</span> <span class="mi">46</span>
+<span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">def</span> <span class="nf">a</span><span class="p">(</span> <span class="n">q_over_m</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">v</span> <span class="p">):</span>
+	<span class="k">global</span> <span class="n">count</span><span class="p">,</span> <span class="n">jumps</span>                <span class="c1"># if you use the global statement, the variable will become available </span>
+	<span class="k">if</span> <span class="n">jumps</span> <span class="o">&gt;=</span> <span class="n">jumps_max</span><span class="p">:</span>			<span class="c1"># &quot;outside&quot; the scope of the function, effectively becoming a global variable</span>
+		<span class="c1"># No acceleration</span>
+		<span class="n">a</span> <span class="o">=</span> <span class="mf">0.0</span>
+	<span class="k">elif</span> <span class="n">r</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">r</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="o">-</span><span class="n">gap_size</span><span class="p">:</span>
+		<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cross</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span> 
+		<span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="n">q_over_m</span>
+		<span class="k">if</span> <span class="n">count</span><span class="p">:</span>
+			<span class="n">jumps</span> <span class="o">+=</span> <span class="mi">1</span>
+			<span class="n">velo</span><span class="p">[</span><span class="n">jumps</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+			<span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+	<span class="k">else</span><span class="p">:</span> 	
+		<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>	
+		<span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="n">q_over_m</span>
+		<span class="k">if</span> <span class="n">r</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+			<span class="n">a</span> <span class="o">=</span> <span class="o">-</span><span class="n">a</span>
+		<span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+	<span class="k">return</span> <span class="n">a</span>
+
+
+<span class="c1">###############################################################################</span>
+<span class="c1">#  </span>
+<span class="c1">#    Solving Equations of Motions Using RK4</span>
+<span class="c1">#</span>
+<span class="c1">###############################################################################</span>
+
+
+
+<span class="c1"># initializes array that will hold the velocity of particle </span>
+<span class="c1"># each time it gains velocity (crosses gap)</span>
+<span class="n">velo</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">jumps_max</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,))</span>
+<span class="n">velo</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">proton</span><span class="o">.</span><span class="n">vel</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">rk4</span><span class="p">(</span><span class="n">particle</span><span class="p">,</span> <span class="n">iterations</span><span class="p">,</span> <span class="n">desired_value</span><span class="p">):</span>
+
+	<span class="n">RK4_pos</span> <span class="o">=</span> <span class="p">[]</span>
+	<span class="n">RK4_vel</span> <span class="o">=</span> <span class="p">[]</span>
+	
+	
+	
+	<span class="n">n</span> <span class="o">=</span> <span class="mi">400</span>
+	<span class="n">h</span> <span class="o">=</span> <span class="n">particle</span><span class="o">.</span><span class="n">period</span><span class="p">()</span> <span class="o">/</span> <span class="n">n</span>
+	<span class="n">q_over_m</span> <span class="o">=</span> <span class="n">particle</span><span class="o">.</span><span class="n">charge</span> <span class="o">/</span> <span class="n">particle</span><span class="o">.</span><span class="n">mass</span>
+	
+	<span class="n">p_0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">particle</span><span class="o">.</span><span class="n">pos</span><span class="p">)</span> 
+	<span class="n">v_0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">particle</span><span class="o">.</span><span class="n">vel</span><span class="p">)</span> 
+	
+	<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">iterations</span> <span class="o">+</span> <span class="mi">10</span><span class="p">):</span>
+		<span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+		<span class="n">p_i</span> <span class="o">=</span> <span class="n">p_0</span>
+		<span class="n">v_i</span> <span class="o">=</span> <span class="n">v_0</span>
+	
+		<span class="n">k1</span> <span class="o">=</span> <span class="n">h</span> <span class="o">*</span> <span class="n">a</span><span class="p">(</span> <span class="n">q_over_m</span><span class="p">,</span> <span class="n">p_i</span><span class="p">,</span> <span class="n">v_i</span> <span class="p">)</span>
+		<span class="n">l1</span> <span class="o">=</span> <span class="n">h</span> <span class="o">*</span> <span class="n">v_i</span>
+		
+		
+		<span class="n">k2</span> <span class="o">=</span> <span class="n">h</span> <span class="o">*</span> <span class="n">a</span><span class="p">(</span> <span class="n">q_over_m</span><span class="p">,</span> <span class="n">p_0</span> <span class="o">+</span> <span class="p">(</span><span class="n">l1</span> <span class="o">*</span> <span class="mf">0.5</span><span class="p">),</span> <span class="n">v_0</span> <span class="o">+</span> <span class="p">(</span><span class="n">k1</span> <span class="o">*</span> <span class="mf">0.5</span><span class="p">)</span> <span class="p">)</span>
+		<span class="n">l2</span> <span class="o">=</span> <span class="n">h</span> <span class="o">*</span> <span class="p">(</span><span class="n">v_0</span> <span class="o">+</span> <span class="p">(</span><span class="n">k1</span> <span class="o">*</span> <span class="mf">0.5</span><span class="p">))</span>
+		
+
+		<span class="n">k3</span> <span class="o">=</span> <span class="n">h</span> <span class="o">*</span> <span class="n">a</span><span class="p">(</span> <span class="n">q_over_m</span><span class="p">,</span> <span class="n">p_0</span> <span class="o">+</span> <span class="p">(</span><span class="n">l2</span> <span class="o">*</span> <span class="mf">0.5</span><span class="p">),</span> <span class="n">v_0</span> <span class="o">+</span> <span class="p">(</span><span class="n">k2</span> <span class="o">*</span> <span class="mf">0.5</span><span class="p">)</span> <span class="p">)</span>
+		<span class="n">l3</span> <span class="o">=</span> <span class="n">h</span> <span class="o">*</span> <span class="p">(</span><span class="n">v_0</span> <span class="o">+</span> <span class="p">(</span><span class="n">k2</span> <span class="o">*</span> <span class="mf">0.5</span><span class="p">))</span>
+	
+		<span class="n">k4</span> <span class="o">=</span> <span class="n">h</span> <span class="o">*</span> <span class="n">a</span><span class="p">(</span> <span class="n">q_over_m</span><span class="p">,</span> <span class="n">p_0</span> <span class="o">+</span> <span class="n">l3</span><span class="p">,</span> <span class="n">v_0</span> <span class="o">+</span> <span class="n">k3</span> <span class="p">)</span>
+		<span class="n">l4</span> <span class="o">=</span> <span class="n">h</span> <span class="o">*</span> <span class="p">(</span><span class="n">v_0</span> <span class="o">+</span> <span class="n">k3</span><span class="p">)</span>
+		
+
+		<span class="n">v_0</span> <span class="o">=</span> <span class="n">v_0</span> <span class="o">+</span> <span class="p">(</span><span class="n">k1</span> <span class="o">+</span> <span class="mf">2.0</span> <span class="o">*</span> <span class="p">(</span><span class="n">k2</span> <span class="o">+</span> <span class="n">k3</span><span class="p">)</span> <span class="o">+</span> <span class="n">k4</span><span class="p">)</span> <span class="o">/</span> <span class="mf">6.0</span>
+		<span class="n">p_0</span> <span class="o">=</span> <span class="n">p_0</span> <span class="o">+</span> <span class="p">(</span><span class="n">l1</span> <span class="o">+</span> <span class="mf">2.0</span> <span class="o">*</span> <span class="p">(</span><span class="n">l2</span> <span class="o">+</span> <span class="n">l3</span><span class="p">)</span> <span class="o">+</span> <span class="n">l4</span><span class="p">)</span> <span class="o">/</span> <span class="mf">6.0</span>
+	
+		
+		
+		<span class="k">if</span> <span class="n">desired_value</span> <span class="o">==</span> <span class="s1">&#39;velocity&#39;</span><span class="p">:</span> 
+			<span class="n">vel_mag</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">v_0</span><span class="p">)</span>
+			<span class="n">RK4_vel</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">vel_mag</span><span class="p">)</span>
+			<span class="n">value</span> <span class="o">=</span> <span class="n">RK4_vel</span>
+		<span class="k">elif</span> <span class="n">desired_value</span> <span class="o">==</span> <span class="s1">&#39;position&#39;</span><span class="p">:</span> 
+			<span class="n">RK4_pos</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">p_0</span><span class="p">)</span>
+			<span class="n">value</span> <span class="o">=</span> <span class="n">RK4_pos</span>
+	
+		
+	<span class="k">return</span> <span class="n">value</span>
+	
+
+<span class="c1">#######################################################################################</span>
+<span class="c1">#  </span>
+<span class="c1">#    Since this program graphs many figures, it is more convenient and efficient</span>
+<span class="c1">#		to create a plot function. </span>
+<span class="c1">#		This function can accomodate 2D and 3D plots, note the first argument</span>
+<span class="c1">#		must be a 3 element list, whose entries are labels for x,y,z coordinates, respectively.</span>
+<span class="c1">#</span>
+<span class="c1">#########################################################################################</span>
+
+<span class="k">def</span> <span class="nf">plot</span><span class="p">(</span><span class="n">coord_labels</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">dimension</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="mi">0</span><span class="p">):</span>
+	
+	<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+	
+	<span class="k">if</span> <span class="n">dimension</span> <span class="o">==</span> <span class="s1">&#39;2d&#39;</span><span class="p">:</span>
+		<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+		<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="p">)</span>
+	<span class="k">elif</span> <span class="n">dimension</span> <span class="o">==</span> <span class="s1">&#39;3d&#39;</span><span class="p">:</span>
+		<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">,</span><span class="n">projection</span> <span class="o">=</span> <span class="n">dimension</span><span class="p">)</span>
+		<span class="n">ax</span><span class="o">.</span><span class="n">plot3D</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+		<span class="n">ax</span><span class="o">.</span><span class="n">set_zlabel</span><span class="p">(</span><span class="n">coord_labels</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+		
+	<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="n">coord_labels</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+	<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="n">coord_labels</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+	<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
+	
+		
+
+
+<span class="c1">###############################################################################</span>
+<span class="c1">#  </span>
+<span class="c1">#    Plotting Trajectory of Particle</span>
+<span class="c1">#</span>
+<span class="c1">###############################################################################</span>
+
+
+<span class="k">def</span> <span class="nf">position_plot</span><span class="p">(</span><span class="n">particle</span><span class="p">):</span>
+
+	<span class="n">x</span> <span class="o">=</span> <span class="p">[]</span>
+	<span class="n">y</span> <span class="o">=</span> <span class="p">[]</span>
+	<span class="n">z</span> <span class="o">=</span> <span class="p">[]</span>
+	
+	<span class="n">x</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">particle</span><span class="o">.</span><span class="n">pos</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+	<span class="n">y</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">particle</span><span class="o">.</span><span class="n">pos</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+	<span class="n">z</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">particle</span><span class="o">.</span><span class="n">pos</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+	
+	<span class="n">results</span> <span class="o">=</span> <span class="n">rk4</span><span class="p">(</span><span class="n">proton</span> <span class="p">,</span> <span class="mi">10000</span> <span class="p">,</span><span class="s1">&#39;position&#39;</span><span class="p">)</span>	
+	
+	<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
+		<span class="n">x</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+		<span class="n">y</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+		<span class="n">z</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+		
+	<span class="n">coordlabel</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;X-axis (m)&quot;</span><span class="p">,</span><span class="s2">&quot;Y-axis (m)&quot;</span><span class="p">,</span><span class="s2">&quot;Z-axis (m)&quot;</span><span class="p">]</span>
+	<span class="n">plot</span><span class="p">(</span><span class="n">coordlabel</span><span class="p">,</span> <span class="s2">&quot;Particle Trajectory in Cyclotron Accelerator&quot;</span><span class="p">,</span> <span class="s1">&#39;3d&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">)</span>
+
+	
+
+<span class="c1">###############################################################################</span>
+<span class="c1">#  </span>
+<span class="c1">#    velocity	vs. time plot</span>
+<span class="c1">#</span>
+<span class="c1">###############################################################################</span>
+
+
+<span class="k">def</span> <span class="nf">velocity_plot</span><span class="p">(</span><span class="n">particle</span><span class="p">):</span>
+	<span class="n">n</span> <span class="o">=</span> <span class="mi">400</span>
+	<span class="n">h</span> <span class="o">=</span> <span class="n">particle</span><span class="o">.</span><span class="n">period</span><span class="p">()</span> <span class="o">/</span> <span class="n">n</span>
+	
+	<span class="n">v</span> <span class="o">=</span> <span class="n">rk4</span><span class="p">(</span><span class="n">proton</span> <span class="p">,</span> <span class="mi">10000</span> <span class="p">,</span><span class="s1">&#39;velocity&#39;</span><span class="p">)</span>	
+	<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="o">*</span> <span class="n">h</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">v</span><span class="p">))</span>
+	
+	
+	<span class="n">coordlabel</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Time (s)&quot;</span><span class="p">,</span><span class="s2">&quot;Velocity (m/s)&quot;</span><span class="p">,</span><span class="s2">&quot;Z-axis (m)&quot;</span><span class="p">]</span>
+	<span class="n">plot</span><span class="p">(</span><span class="n">coordlabel</span><span class="p">,</span> <span class="s2">&quot;Beam Velocity as a Function of Time&quot;</span><span class="p">,</span> <span class="s1">&#39;2d&#39;</span><span class="p">,</span> <span class="n">t</span><span class="p">,</span><span class="n">v</span><span class="p">)</span>
+	
+
+	<span class="c1">#prints final velocity</span>
+	<span class="n">final_velo</span> <span class="o">=</span> <span class="n">velo</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">velo</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
+    <span class="c1">#prints final time</span>
+	<span class="n">final_t</span> <span class="o">=</span> <span class="n">t</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">velo</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
+	<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The particle exits the particle accelerator at velocity </span><span class="si">{</span><span class="n">final_velo</span><span class="si">}</span><span class="s2"> m/s after </span><span class="si">{</span><span class="n">final_t</span><span class="si">}</span><span class="s2"> seconds&quot;</span> <span class="p">)</span>
+
+
+<span class="c1">###############################################################################</span>
+<span class="c1">#  </span>
+<span class="c1">#    velocity vs radius</span>
+<span class="c1">#</span>
+<span class="c1">###############################################################################</span>
+
+
+<span class="k">def</span> <span class="nf">vel_rad_plot</span><span class="p">(</span><span class="n">particle</span><span class="p">):</span>
+
+
+	<span class="n">radius</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">velo</span><span class="p">),))</span>
+
+	<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">velo</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+		<span class="n">radius</span><span class="p">[</span><span class="n">item</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">velo</span><span class="p">[</span><span class="n">item</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">particle</span><span class="o">.</span><span class="n">mass</span> <span class="o">/</span> <span class="p">(</span><span class="n">particle</span><span class="o">.</span><span class="n">charge</span> <span class="o">*</span> <span class="n">bmag</span><span class="p">)</span>
+	
+	<span class="n">coordlabel</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Radius (m)&quot;</span><span class="p">,</span><span class="s2">&quot;Velocity (m/s)&quot;</span><span class="p">,</span><span class="s2">&quot;Z-axis (m)&quot;</span><span class="p">]</span>
+	<span class="n">plot</span><span class="p">(</span><span class="n">coordlabel</span><span class="p">,</span> <span class="s2">&quot;Beam Velocity at Various Extraction Radius&quot;</span><span class="p">,</span> <span class="s1">&#39;2d&#39;</span><span class="p">,</span> <span class="n">radius</span><span class="p">,</span><span class="n">velo</span><span class="p">)</span>
+	
+
+
+<span class="n">velocity_plot</span><span class="p">(</span><span class="n">proton</span><span class="p">)</span>
+<span class="n">jumps</span> <span class="o">=</span> <span class="mi">0</span> 
+<span class="n">position_plot</span><span class="p">(</span><span class="n">proton</span><span class="p">)</span>
+<span class="n">vel_rad_plot</span><span class="p">(</span><span class="n">proton</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The particle exits the particle accelerator at velocity 50196498.48278275 m/s after 5.028359576306673e-09 seconds
+</pre></div>
+</div>
+<img alt="../_images/cyclotron_1_1.png" src="../_images/cyclotron_1_1.png" />
+<img alt="../_images/cyclotron_1_2.png" src="../_images/cyclotron_1_2.png" />
+<img alt="../_images/cyclotron_1_3.png" src="../_images/cyclotron_1_3.png" />
+</div>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./particle-accelerator"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Introduction</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../vulnerability-prediction/project-overview.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Vulnerability Prediction</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Tony Alarcon<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

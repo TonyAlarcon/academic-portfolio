@@ -1,0 +1,28 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+
+chapters:
+#- file: markdown
+#- file: notebooks
+#- file: markdown-notebooks
+- file: particle-accelerator/overview
+  sections: 
+    - file: particle-accelerator/intro
+    - file: particle-accelerator/cyclotron
+- file: amazon-vision/project-overview
+  sections:
+    - file: amazon-vision/ClutterizerV2
+    - file: amazon-vision/Detectron
+    - file: amazon-vision/Testing
+- file: vulnerability-prediction/project-overview
+  sections: 
+    - file: vulnerability-prediction/embeddings
+    - file: vulnerability-prediction/CNN
+    - file: vulnerability-prediction/MLP
+    - file: vulnerability-prediction/SVM_LSTM
+- file: wikipedia-image-captioning/report.md
+- file: apriori
+
