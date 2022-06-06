@@ -1,0 +1,1067 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Synthetic Image Generator &#8212; Academic Portfolio</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Detectron2" href="Detectron.html" />
+    <link rel="prev" title="Amazon Vision Robotics" href="project-overview.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Academic Portfolio</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../markdown.html">
+   Markdown Files
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../notebooks.html">
+   Content with notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../markdown-notebooks.html">
+   Notebooks with MyST Markdown
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../particle-accelerator/overview.html">
+   Particle Accelerator Simulation
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../particle-accelerator/intro.html">
+     Introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../particle-accelerator/cyclotron.html">
+     Cyclotron Code
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../vulnerability-prediction/project-overview.html">
+   Vulnerability Prediction
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="project-overview.html">
+   Amazon Vision Robotics
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Synthetic Image Generator
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Detectron.html">
+     Detectron2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Testing.html">
+     Importing Trained Model
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../apriori.html">
+   Apriori Algorithm
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/amazon-vision/ClutterizerV2.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Famazon-vision/ClutterizerV2.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/amazon-vision/ClutterizerV2.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Synthetic Image Generator</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="synthetic-image-generator">
+<h1>Synthetic Image Generator<a class="headerlink" href="#synthetic-image-generator" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">cv2</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">from</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">import</span> <span class="n">figure</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">files</span>
+<span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
+<span class="kn">import</span> <span class="nn">codecs</span><span class="o">,</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">uuid</span>
+<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+<span class="kn">import</span> <span class="nn">random</span>
+<span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Working Directory:&#39;</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount(&quot;/content/drive&quot;, force_remount=True).
+Working Directory: /content
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#resize an image while presercing their aspect ratio (i.e., their width to heigth ratio will be the same in the rescaling)</span>
+<span class="k">def</span> <span class="nf">resize</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">scale_percent</span><span class="p">):</span>
+  <span class="c1">#calculate the 50 percent of original dimensions</span>
+  <span class="n">width</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">image</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">scale_percent</span> <span class="o">/</span> <span class="mi">100</span><span class="p">)</span>
+  <span class="n">height</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">image</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">scale_percent</span> <span class="o">/</span> <span class="mi">100</span><span class="p">)</span>
+  <span class="n">dsize</span> <span class="o">=</span> <span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">)</span>
+  <span class="n">resized</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">dsize</span><span class="p">)</span>
+
+  <span class="k">return</span> <span class="n">resized</span> 
+
+<span class="k">def</span> <span class="nf">create_masks</span><span class="p">(</span><span class="n">image</span><span class="p">):</span>
+    <span class="c1">#convert the image into a grayscale image (single channel format).</span>
+    <span class="n">gray</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2GRAY</span><span class="p">)</span>
+    <span class="c1"># apply binary thresholding</span>
+    <span class="n">ret</span><span class="p">,</span> <span class="n">thresh</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">threshold</span><span class="p">(</span><span class="n">gray</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">THRESH_BINARY</span><span class="p">)</span>
+    <span class="c1"># detect the contours on the binary image using cv2.CHAIN_APPROX_NONE</span>
+    <span class="n">contours</span><span class="p">,</span> <span class="n">hierarchy</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">findContours</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="n">thresh</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="n">cv2</span><span class="o">.</span><span class="n">RETR_EXTERNAL</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="n">cv2</span><span class="o">.</span><span class="n">CHAIN_APPROX_NONE</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">contours</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#scratch365 path</span>
+<span class="n">dataset_path</span> <span class="o">=</span> <span class="s2">&quot;/content/drive/MyDrive/Amazon Project/Amazon-Robotics-snapshot-001-project-coco-1646593032&quot;</span>
+<span class="n">old_annotations_train</span> <span class="o">=</span> <span class="n">dataset_path</span> <span class="o">+</span> <span class="s2">&quot;/train.json&quot;</span>
+
+<span class="k">def</span> <span class="nf">rotate_image</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">angle</span><span class="p">):</span>
+    <span class="n">height</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">shape</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>
+    <span class="n">center</span> <span class="o">=</span> <span class="p">(</span><span class="n">width</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">height</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+    <span class="c1"># the above center is the center of rotation axis</span>
+    <span class="c1"># use cv2.getRotationMatrix2D() to get the rotation matrix</span>
+    <span class="n">rotate_matrix</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">getRotationMatrix2D</span><span class="p">(</span><span class="n">center</span><span class="o">=</span><span class="n">center</span><span class="p">,</span> <span class="n">angle</span><span class="o">=</span><span class="n">angle</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="c1"># Rotate the image using cv2.warpAffine</span>
+    <span class="n">rotated_image</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">warpAffine</span><span class="p">(</span><span class="n">src</span><span class="o">=</span><span class="n">image</span><span class="p">,</span> <span class="n">M</span><span class="o">=</span><span class="n">rotate_matrix</span><span class="p">,</span> <span class="n">dsize</span><span class="o">=</span><span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">))</span>
+    
+    <span class="k">return</span> <span class="n">rotated_image</span> 
+
+<span class="k">def</span> <span class="nf">get_image_poly</span><span class="p">(</span><span class="n">json_path</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
+  <span class="c1">#variable where we will save our new json object</span>
+    <span class="n">new_json</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">json_path</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+        <span class="n">json_object</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+        <span class="n">images</span> <span class="o">=</span> <span class="n">json_object</span><span class="p">[</span><span class="s1">&#39;images&#39;</span><span class="p">]</span>
+        <span class="n">annotations</span> <span class="o">=</span> <span class="n">json_object</span><span class="p">[</span><span class="s1">&#39;annotations&#39;</span><span class="p">]</span>
+        
+        
+        <span class="n">image</span> <span class="o">=</span> <span class="n">images</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
+        <span class="n">file_path</span> <span class="o">=</span> <span class="n">image</span><span class="p">[</span><span class="s2">&quot;file_name&quot;</span><span class="p">]</span>
+        <span class="n">bbox</span> <span class="o">=</span> <span class="n">annotations</span><span class="p">[</span><span class="n">index</span><span class="p">][</span><span class="s2">&quot;bbox&quot;</span><span class="p">]</span>
+        <span class="n">category</span> <span class="o">=</span> <span class="n">annotations</span><span class="p">[</span><span class="n">index</span><span class="p">][</span><span class="s2">&quot;category_id&quot;</span><span class="p">]</span>
+        <span class="n">poly</span> <span class="o">=</span> <span class="n">annotations</span><span class="p">[</span><span class="n">index</span><span class="p">][</span><span class="s2">&quot;segmentation&quot;</span><span class="p">]</span>
+  
+    <span class="k">return</span> <span class="n">file_path</span><span class="p">,</span> <span class="n">bbox</span><span class="p">,</span> <span class="n">poly</span><span class="p">,</span> <span class="n">category</span>
+
+
+
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>img/01FVE4HAA7GNXZYGEMHPPF0JKT.jpeg
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">img_preprocessing</span><span class="p">(</span><span class="n">image_path</span><span class="p">,</span> <span class="n">bbox</span><span class="p">,</span> <span class="n">poly</span><span class="p">):</span>
+    <span class="c1">#read image</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;/content/drive/MyDrive/Amazon Project/Amazon-Robotics-snapshot-001-project-coco-1646593032/&#39;</span><span class="o">+</span><span class="n">image_path</span><span class="p">)</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2RGB</span><span class="p">)</span>
+    <span class="c1">## (1) Crop the bounding rect</span>
+    <span class="n">poly</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">poly</span><span class="p">)</span>
+    <span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">w</span><span class="p">,</span><span class="n">h</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">bbox</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+    <span class="n">croped</span> <span class="o">=</span> <span class="n">img</span><span class="p">[</span><span class="n">y</span><span class="p">:</span><span class="n">y</span><span class="o">+</span><span class="n">h</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span><span class="n">x</span><span class="o">+</span><span class="n">w</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    
+    <span class="c1">## (2) make mask</span>
+    <span class="n">poly</span> <span class="o">=</span> <span class="n">poly</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+    <span class="n">poly</span> <span class="o">=</span> <span class="n">poly</span> <span class="o">-</span> <span class="n">poly</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">mask</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">croped</span><span class="o">.</span><span class="n">shape</span><span class="p">[:</span><span class="mi">2</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
+    <span class="n">cv2</span><span class="o">.</span><span class="n">drawContours</span><span class="p">(</span><span class="n">mask</span><span class="p">,</span> <span class="p">[</span><span class="n">poly</span><span class="p">],</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">),</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">LINE_AA</span><span class="p">)</span>
+    
+    <span class="c1">## (3) do bit-op</span>
+    <span class="n">dst</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">bitwise_and</span><span class="p">(</span><span class="n">croped</span><span class="p">,</span> <span class="n">croped</span><span class="p">,</span> <span class="n">mask</span><span class="o">=</span><span class="n">mask</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">dst</span><span class="p">,</span> <span class="n">mask</span> 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">## (1) Crop the bounding rect</span>
+<span class="n">file_path</span><span class="p">,</span> <span class="n">bbox</span><span class="p">,</span> <span class="n">poly</span><span class="p">,</span> <span class="n">category</span> <span class="o">=</span> <span class="n">get_image_poly</span><span class="p">(</span><span class="n">old_annotations_train</span><span class="p">,</span> <span class="mi">57</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
+
+<span class="n">image</span><span class="p">,</span> <span class="n">mask</span> <span class="o">=</span> <span class="n">img_preprocessing</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">bbox</span><span class="p">,</span> <span class="n">poly</span><span class="p">)</span>
+
+<span class="n">f</span><span class="p">,</span> <span class="n">axarr</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">axarr</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
+<span class="n">axarr</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">mask</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">create_masks</span><span class="p">(</span><span class="n">image</span><span class="p">))</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>img/01FVE4KP5K3HDT0Z79CH4PRK7Q.jpeg
+(1, 6289, 1, 2)
+</pre></div>
+</div>
+<img alt="../_images/ClutterizerV2_5_1.png" src="../_images/ClutterizerV2_5_1.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">re_image</span> <span class="o">=</span> <span class="n">resize</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+<span class="n">re_mask</span> <span class="o">=</span> <span class="n">resize</span><span class="p">(</span><span class="n">mask</span><span class="p">,</span>  <span class="mi">20</span><span class="p">)</span>
+<span class="n">mask_rbg</span> <span class="o">=</span> <span class="n">img_rgb</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">re_mask</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2RGB</span><span class="p">)</span>
+<span class="n">f</span><span class="p">,</span> <span class="n">axarr</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">axarr</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">re_image</span><span class="p">)</span>
+<span class="n">axarr</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">mask_rbg</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7f4f4d83f290&gt;
+</pre></div>
+</div>
+<img alt="../_images/ClutterizerV2_6_1.png" src="../_images/ClutterizerV2_6_1.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">## (1) Crop the bounding rect</span>
+<span class="n">file_path</span><span class="p">,</span> <span class="n">bbox</span><span class="p">,</span> <span class="n">poly</span><span class="p">,</span> <span class="n">category</span> <span class="o">=</span> <span class="n">get_image_poly</span><span class="p">(</span><span class="n">old_annotations_train</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">image1</span><span class="p">,</span> <span class="n">mask1</span> <span class="o">=</span> <span class="n">img_preprocessing</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">bbox</span><span class="p">,</span> <span class="n">poly</span><span class="p">)</span>
+
+<span class="n">mask1_rbg</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">mask1</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2RGB</span><span class="p">)</span>
+<span class="n">re_image1</span> <span class="o">=</span> <span class="n">resize</span><span class="p">(</span><span class="n">image1</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+<span class="n">re_mask1</span> <span class="o">=</span> <span class="n">resize</span><span class="p">(</span><span class="n">mask1</span><span class="p">,</span>  <span class="mi">20</span><span class="p">)</span>
+<span class="n">f</span><span class="p">,</span> <span class="n">axarr</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">axarr</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">re_image1</span><span class="p">)</span>
+<span class="n">axarr</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">mask1_rbg</span><span class="p">)</span>
+
+
+
+<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">create_masks</span><span class="p">(</span><span class="n">image</span><span class="p">))</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(1, 10117, 1, 2)
+</pre></div>
+</div>
+<img alt="../_images/ClutterizerV2_7_1.png" src="../_images/ClutterizerV2_7_1.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#given the background image, we create mask the object inserted into the background image</span>
+<span class="k">def</span> <span class="nf">background_mask</span><span class="p">(</span><span class="n">background</span><span class="p">,</span> <span class="n">obj_mask</span><span class="p">,</span> <span class="n">distX</span><span class="p">,</span> <span class="n">distY</span><span class="p">):</span>
+  <span class="n">bg</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">background</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">background</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+  <span class="n">bg</span> <span class="o">=</span> <span class="n">bg</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
+
+  <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">obj_mask</span><span class="o">.</span><span class="n">shape</span>
+  
+  <span class="n">bg</span><span class="p">[</span><span class="n">distX</span><span class="p">:</span><span class="n">distX</span><span class="o">+</span><span class="n">x</span><span class="p">,</span> <span class="n">distY</span><span class="p">:</span><span class="n">distY</span><span class="o">+</span><span class="n">y</span><span class="p">]</span> <span class="o">=</span> <span class="n">bg</span><span class="p">[</span><span class="n">distX</span><span class="p">:</span><span class="n">distX</span><span class="o">+</span><span class="n">x</span><span class="p">,</span> <span class="n">distY</span><span class="p">:</span><span class="n">distY</span><span class="o">+</span><span class="n">y</span><span class="p">]</span> <span class="o">+</span> <span class="n">obj_mask</span>
+
+  <span class="k">return</span> <span class="n">bg</span> 
+
+<span class="c1">#given a background mask and a foreground mask, we crop out the background mask</span>
+<span class="k">def</span> <span class="nf">crop_mask</span><span class="p">(</span><span class="n">back_mask</span><span class="p">,</span> <span class="n">front_mask</span><span class="p">):</span>
+  <span class="n">back_mask</span> <span class="o">=</span> <span class="n">back_mask</span> <span class="o">-</span> <span class="n">front_mask</span>
+
+  <span class="n">kernel</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
+  <span class="n">back_mask</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">erode</span><span class="p">(</span><span class="n">back_mask</span><span class="p">,</span> <span class="n">kernel</span><span class="p">,</span> <span class="n">iterations</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+  
+  <span class="n">_</span><span class="p">,</span> <span class="n">mask</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">threshold</span><span class="p">(</span><span class="n">back_mask</span><span class="p">,</span> <span class="mi">122</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">THRESH_BINARY</span><span class="p">)</span>
+
+  <span class="k">return</span> <span class="n">mask</span>
+
+
+<span class="k">def</span> <span class="nf">personalized_resized</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">mask</span><span class="p">,</span> <span class="n">category</span><span class="p">):</span>
+
+    <span class="n">resized_image</span> <span class="o">=</span> <span class="n">resize</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="mi">18</span><span class="p">)</span>
+    <span class="n">resized_mask</span> <span class="o">=</span> <span class="n">resize</span><span class="p">(</span><span class="n">mask</span><span class="p">,</span> <span class="mi">18</span><span class="p">)</span>
+
+    <span class="c1">#if keyboard category</span>
+    <span class="k">if</span> <span class="n">category</span> <span class="o">==</span> <span class="mi">8</span><span class="p">:</span>
+      <span class="n">resized_image</span> <span class="o">=</span> <span class="n">resize</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="mi">42</span><span class="p">)</span>
+      <span class="n">resized_mask</span> <span class="o">=</span> <span class="n">resize</span><span class="p">(</span><span class="n">mask</span><span class="p">,</span> <span class="mi">42</span><span class="p">)</span>
+    <span class="c1"># if hairbrush category</span>
+    <span class="k">elif</span> <span class="n">category</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
+      <span class="n">resized_image</span> <span class="o">=</span> <span class="n">resize</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="mi">23</span><span class="p">)</span>
+      <span class="n">resized_mask</span> <span class="o">=</span> <span class="n">resize</span><span class="p">(</span><span class="n">mask</span><span class="p">,</span> <span class="mi">23</span><span class="p">)</span>
+    <span class="c1"># if mouse category</span>
+    <span class="k">elif</span> <span class="n">category</span> <span class="o">==</span> <span class="mi">9</span><span class="p">:</span>
+      <span class="n">resized_image</span> <span class="o">=</span> <span class="n">resize</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span>
+      <span class="n">resized_mask</span> <span class="o">=</span> <span class="n">resize</span><span class="p">(</span><span class="n">mask</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span>
+
+
+
+    <span class="k">return</span> <span class="n">resized_image</span><span class="p">,</span> <span class="n">resized_mask</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">([</span><span class="mi">2000</span><span class="p">,</span><span class="mi">2000</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span><span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
+<span class="n">bg_1</span> <span class="o">=</span> <span class="n">background_mask</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">re_mask1</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">bg_2</span> <span class="o">=</span> <span class="n">background_mask</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">re_mask</span><span class="p">,</span> <span class="mi">250</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+
+<span class="n">res</span> <span class="o">=</span> <span class="n">crop_mask</span><span class="p">(</span><span class="n">bg_1</span><span class="p">,</span> <span class="n">bg_2</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span><span class="mi">11</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7f4f4d157850&gt;
+</pre></div>
+</div>
+<img alt="../_images/ClutterizerV2_9_1.png" src="../_images/ClutterizerV2_9_1.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">overlay</span><span class="p">(</span><span class="n">background</span><span class="p">,</span> <span class="n">foreground</span><span class="p">,</span> <span class="n">mask</span><span class="p">,</span> <span class="n">destX</span> <span class="o">=</span> <span class="mi">500</span><span class="p">,</span> <span class="n">destY</span> <span class="o">=</span> <span class="mi">250</span><span class="p">):</span>
+
+  <span class="n">results</span> <span class="o">=</span> <span class="n">background</span>
+  <span class="n">mask_boolean</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">stack</span><span class="p">([</span><span class="n">mask</span><span class="p">,</span> <span class="n">mask</span><span class="p">,</span> <span class="n">mask</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+  <span class="n">y1</span> <span class="o">=</span> <span class="n">destY</span>
+  <span class="n">y2</span> <span class="o">=</span> <span class="n">destY</span> <span class="o">+</span> <span class="n">foreground</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+  <span class="n">x1</span> <span class="o">=</span> <span class="n">destX</span>
+  <span class="n">x2</span> <span class="o">=</span> <span class="n">destX</span><span class="o">+</span><span class="n">foreground</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+
+  <span class="n">results</span><span class="p">[</span><span class="n">y1</span><span class="p">:</span> <span class="n">y2</span><span class="p">,</span> <span class="n">x1</span><span class="p">:</span><span class="n">x2</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span>  <span class="n">results</span><span class="p">[</span><span class="n">y1</span><span class="p">:</span> <span class="n">y2</span><span class="p">,</span> <span class="n">x1</span><span class="p">:</span><span class="n">x2</span><span class="p">,</span> <span class="p">:]</span> <span class="o">*</span> <span class="o">~</span><span class="n">mask_boolean</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">foreground</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">0</span><span class="p">:</span><span class="n">foreground</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="p">:]</span> <span class="o">+</span> <span class="n">foreground</span>
+  <span class="n">results</span><span class="p">[</span><span class="n">y1</span><span class="p">:</span> <span class="n">y2</span><span class="p">,</span> <span class="n">x1</span><span class="p">:</span><span class="n">x2</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span>  <span class="n">results</span><span class="p">[</span><span class="n">y1</span><span class="p">:</span> <span class="n">y2</span><span class="p">,</span> <span class="n">x1</span><span class="p">:</span><span class="n">x2</span><span class="p">,</span> <span class="p">:]</span>  <span class="o">*</span> <span class="o">~</span><span class="n">mask_boolean</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">foreground</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">0</span><span class="p">:</span><span class="n">foreground</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="p">:]</span> <span class="o">+</span> <span class="n">foreground</span>
+
+  <span class="n">bg_mask</span> <span class="o">=</span> <span class="n">background_mask</span><span class="p">(</span><span class="n">results</span><span class="p">,</span> <span class="n">mask</span><span class="p">,</span> <span class="n">destY</span><span class="p">,</span> <span class="n">destX</span><span class="p">)</span>
+
+
+  <span class="k">return</span> <span class="n">results</span><span class="p">,</span> <span class="n">bg_mask</span>
+
+<span class="k">def</span> <span class="nf">choose_destination</span><span class="p">(</span><span class="n">background</span><span class="p">,</span> <span class="n">obj</span><span class="p">):</span>
+    <span class="n">background_bbox</span> <span class="o">=</span> <span class="p">[</span><span class="mi">700</span><span class="p">,</span> <span class="mi">450</span><span class="p">,</span> <span class="mi">2000</span><span class="p">,</span> <span class="mi">1500</span><span class="p">]</span> <span class="c1">#[x, y, width, height]</span>
+
+    <span class="n">obj_length</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="c1">#length in x_axis</span>
+    <span class="n">obj_height</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1">#length in y_axis</span>
+
+    <span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">background_bbox</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">-</span> <span class="n">obj_length</span><span class="p">)</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">background_bbox</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">-</span> <span class="n">obj_height</span><span class="p">)</span>
+  
+    <span class="n">destX</span> <span class="o">=</span>  <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">background_bbox</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">background_bbox</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">x</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span> 
+    <span class="n">destY</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">background_bbox</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">background_bbox</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">y</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">return</span> <span class="n">destX</span><span class="p">,</span> <span class="n">destY</span>
+
+<span class="k">def</span> <span class="nf">overlay_images</span><span class="p">(</span><span class="n">empty_tote</span><span class="p">,</span> <span class="n">obj</span><span class="p">,</span> <span class="n">obj_masks</span><span class="p">,</span> <span class="n">obj_category</span><span class="p">):</span>
+
+  <span class="n">composite</span> <span class="o">=</span> <span class="n">empty_tote</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+  <span class="n">composite_masks</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="n">composite_categories</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="n">polygons</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="n">bboxs</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="n">categories</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="n">areas</span> <span class="o">=</span> <span class="p">[]</span>
+
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">obj</span><span class="p">)):</span>
+
+    <span class="n">destX</span><span class="p">,</span> <span class="n">destY</span> <span class="o">=</span> <span class="n">choose_destination</span><span class="p">(</span><span class="n">empty_tote</span><span class="p">,</span> <span class="n">obj</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="n">composite</span><span class="p">,</span> <span class="n">composite_mask</span> <span class="o">=</span> <span class="n">overlay</span><span class="p">(</span><span class="n">composite</span><span class="p">,</span> <span class="n">obj</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">obj_masks</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">destX</span> <span class="p">,</span> <span class="n">destY</span><span class="p">)</span>
+    <span class="n">composite_masks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">composite_mask</span><span class="p">)</span>
+  
+
+  <span class="n">final_masks</span> <span class="o">=</span> <span class="n">composite_masks</span>
+
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">composite_masks</span><span class="p">))):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+      <span class="n">final_masks</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">crop_mask</span><span class="p">(</span><span class="n">back_mask</span><span class="o">=</span> <span class="n">final_masks</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">front_mask</span><span class="o">=</span><span class="n">final_masks</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+
+
+  <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">mask</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">final_masks</span><span class="p">):</span>
+
+    <span class="n">contours</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">findContours</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="n">mask</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="n">cv2</span><span class="o">.</span><span class="n">RETR_EXTERNAL</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="n">cv2</span><span class="o">.</span><span class="n">CHAIN_APPROX_NONE</span><span class="p">)</span>
+    <span class="c1">#iterate though every disjoint contour found in the image </span>
+      <span class="c1">#if the resulting area of an object is below a certain threshold, let remove it from consideration</span>
+    <span class="n">threshold</span> <span class="o">=</span> <span class="mi">1500</span>
+    <span class="k">for</span> <span class="n">cont</span> <span class="ow">in</span> <span class="n">contours</span><span class="p">:</span>
+      <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">cont</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Skipping This Polygon.. Length of </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">cont</span><span class="p">)</span><span class="si">}</span><span class="s2"> too short&quot;</span><span class="p">)</span>
+        <span class="k">continue</span>
+      <span class="c1">#get all details of a polygon, i.e. area, bounding box, category, segmentations</span>
+      <span class="n">cont</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">cont</span><span class="p">)</span>
+      <span class="n">area</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">contourArea</span><span class="p">(</span><span class="n">cont</span><span class="p">)</span> <span class="c1">#get the area of disjoint contour</span>
+      <span class="k">if</span> <span class="n">area</span> <span class="o">&lt;</span> <span class="n">threshold</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Skipping This Polygon.. Area of </span><span class="si">{</span><span class="n">area</span><span class="si">}</span><span class="s2"> is too small&quot;</span><span class="p">)</span>
+        <span class="k">continue</span>
+      <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">h</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">boundingRect</span><span class="p">(</span><span class="n">cont</span><span class="p">)</span> <span class="c1">#get the bounding box for each disjoint contour</span>
+      <span class="n">bbox</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">w</span><span class="p">,</span><span class="n">h</span><span class="p">]</span>
+      <span class="n">category</span> <span class="o">=</span> <span class="n">obj_category</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
+      <span class="n">polygon</span> <span class="o">=</span> <span class="n">cont</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">cont</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="mi">2</span><span class="p">)</span>
+
+      <span class="c1">#appending final items</span>
+      <span class="n">polygons</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">polygon</span><span class="p">)</span>
+      <span class="n">bboxs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">bbox</span><span class="p">)</span>
+      <span class="n">categories</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">category</span><span class="p">)</span>
+      <span class="n">areas</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">area</span><span class="p">)</span>
+
+
+
+
+
+
+    
+
+  <span class="k">return</span> <span class="n">composite</span><span class="p">,</span> <span class="n">polygons</span><span class="p">,</span> <span class="n">bboxs</span><span class="p">,</span> <span class="n">areas</span><span class="p">,</span> <span class="n">categories</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">add_cluster_details</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="n">polygons</span><span class="p">,</span> <span class="n">bbox</span><span class="p">,</span> <span class="n">area</span><span class="p">,</span> <span class="n">category</span><span class="p">,</span> <span class="n">json_file</span><span class="p">):</span>
+    <span class="n">im</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">shape</span>
+    <span class="n">height</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="n">im</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">im</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">coco_file</span> <span class="o">=</span> <span class="kc">None</span>
+    
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">json_file</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+        <span class="n">coco_file</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+    
+    <span class="c1">#cluster of objects in a single image will share the same &quot;images&quot; component</span>
+    <span class="n">image_id</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">coco_file</span><span class="p">[</span><span class="s2">&quot;images&quot;</span><span class="p">])</span>
+    
+    <span class="n">image_details</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="n">image_id</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s2">&quot;height&quot;</span><span class="p">:</span> <span class="n">height</span><span class="p">,</span>
+        <span class="s2">&quot;width&quot;</span><span class="p">:</span> <span class="n">width</span><span class="p">,</span>
+        <span class="s2">&quot;file_name&quot;</span><span class="p">:</span> <span class="s2">&quot;synthetic_im/&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">path</span><span class="p">)),</span>
+    <span class="p">}</span>
+    <span class="n">coco_file</span><span class="p">[</span><span class="s2">&quot;images&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">image_details</span><span class="p">)</span>
+
+    <span class="c1">#each object will have unique annotations details </span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">polygons</span><span class="p">)):</span>
+      <span class="n">annotations_id</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">coco_file</span><span class="p">[</span><span class="s1">&#39;annotations&#39;</span><span class="p">])</span>
+
+      <span class="n">annotations_details</span> <span class="o">=</span> <span class="p">{</span>
+          <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="n">annotations_id</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span>
+          <span class="s2">&quot;area&quot;</span><span class="p">:</span> <span class="n">area</span><span class="p">[</span><span class="n">i</span><span class="p">],</span>
+          <span class="s2">&quot;iscrowd&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+          <span class="s2">&quot;image_id&quot;</span><span class="p">:</span> <span class="n">image_id</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span>
+          <span class="s2">&quot;bbox&quot;</span><span class="p">:</span> <span class="n">bbox</span><span class="p">[</span><span class="n">i</span><span class="p">],</span>
+          <span class="s2">&quot;category_id&quot;</span><span class="p">:</span> <span class="n">category</span><span class="p">[</span><span class="n">i</span><span class="p">],</span>
+          <span class="s2">&quot;segmentation&quot;</span><span class="p">:</span> <span class="n">polygons</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+      <span class="p">}</span>
+      
+      
+      <span class="n">coco_file</span><span class="p">[</span><span class="s2">&quot;annotations&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">annotations_details</span><span class="p">)</span>
+    
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">json_file</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+        <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">coco_file</span><span class="p">,</span> <span class="n">file</span><span class="p">,</span> <span class="n">indent</span> <span class="o">=</span> <span class="mi">4</span><span class="p">)</span>
+
+
+
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_sample_array</span><span class="p">():</span>
+
+  <span class="n">image_index</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">89</span><span class="p">))</span>
+  <span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">image_index</span><span class="p">)</span>
+  <span class="n">pieces</span> <span class="o">=</span> <span class="mi">11</span>
+  <span class="n">samples</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array_split</span><span class="p">(</span><span class="n">image_index</span><span class="p">,</span> <span class="n">pieces</span><span class="p">)</span>
+
+  <span class="k">return</span> <span class="n">samples</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">pipeline</span><span class="p">(</span><span class="n">coco_file</span><span class="p">,</span> <span class="n">rotate90</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">rotate180</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">rotate270</span> <span class="o">=</span> <span class="kc">False</span><span class="p">):</span> 
+  <span class="n">empty_tote</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;/content/drive/MyDrive/Amazon Project/clutterizer_test/empty_tote.jpeg&#39;</span><span class="p">)</span>
+  <span class="n">empty_tote</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">empty_tote</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2RGB</span><span class="p">)</span> <span class="c1">#cv2 reads images in BGR, this functions transforms to RGB</span>
+
+  <span class="n">all_samples</span> <span class="o">=</span> <span class="n">get_sample_array</span><span class="p">()</span>
+  <span class="k">for</span> <span class="n">sample</span> <span class="ow">in</span> <span class="n">all_samples</span><span class="p">:</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">masks</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">categories</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="n">sample</span><span class="p">:</span>
+      <span class="n">file_path</span><span class="p">,</span> <span class="n">bbox</span><span class="p">,</span> <span class="n">poly</span><span class="p">,</span> <span class="n">category</span> <span class="o">=</span> <span class="n">get_image_poly</span><span class="p">(</span><span class="n">old_annotations_train</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span> <span class="c1">#get orignal image</span>
+      <span class="n">image</span><span class="p">,</span> <span class="n">mask</span> <span class="o">=</span> <span class="n">img_preprocessing</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">bbox</span><span class="p">,</span> <span class="n">poly</span><span class="p">)</span> <span class="c1">#perform preprocessing </span>
+      <span class="n">image</span><span class="p">,</span> <span class="n">mask</span> <span class="o">=</span> <span class="n">personalized_resized</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">mask</span><span class="p">,</span> <span class="n">category</span><span class="p">)</span> <span class="c1">#perform resizing</span>
+      <span class="k">if</span> <span class="n">rotate90</span><span class="p">:</span>
+        <span class="n">image</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">ROTATE_90_COUNTERCLOCKWISE</span><span class="p">)</span>
+        <span class="n">mask</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="n">mask</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">ROTATE_90_COUNTERCLOCKWISE</span><span class="p">)</span>
+      <span class="k">if</span> <span class="n">rotate180</span><span class="p">:</span>
+        <span class="n">image</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">ROTATE_180</span><span class="p">)</span>
+        <span class="n">mask</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="n">mask</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">ROTATE_180</span><span class="p">)</span>
+      <span class="k">if</span> <span class="n">rotate270</span><span class="p">:</span>
+        <span class="n">image</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">ROTATE_90_COUNTERCLOCKWISE</span><span class="p">)</span>
+        <span class="n">mask</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="n">mask</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">ROTATE_90_COUNTERCLOCKWISE</span><span class="p">)</span>
+
+
+
+
+      <span class="n">img</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
+      <span class="n">masks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">mask</span><span class="p">)</span>
+      <span class="n">categories</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">category</span><span class="p">)</span>
+
+    <span class="c1"># detect the contours on the binary image using cv2.CHAIN_APPROX_NONE</span>
+    <span class="n">composition</span><span class="p">,</span> <span class="n">contours</span><span class="p">,</span> <span class="n">bbox_arr</span><span class="p">,</span> <span class="n">areas</span><span class="p">,</span> <span class="n">categor</span> <span class="o">=</span> <span class="n">overlay_images</span><span class="p">(</span><span class="n">empty_tote</span><span class="p">,</span> <span class="n">img</span><span class="p">,</span> <span class="n">masks</span><span class="p">,</span> <span class="n">categories</span><span class="p">)</span>
+
+    <span class="n">composition</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">composition</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2RGB</span><span class="p">)</span>
+
+    <span class="n">path</span> <span class="o">=</span> <span class="s1">&#39;/content/drive/MyDrive/Amazon Project/clutterized/synthetic_im/&#39;</span>
+    <span class="n">image_name</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid1</span><span class="p">())</span> <span class="o">+</span> <span class="s1">&#39;.png&#39;</span>
+    <span class="n">image_path</span> <span class="o">=</span> <span class="n">path</span> <span class="o">+</span> <span class="n">image_name</span>
+    <span class="n">cv2</span><span class="o">.</span><span class="n">imwrite</span><span class="p">(</span><span class="n">image_path</span><span class="p">,</span> <span class="n">composition</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;generating image: </span><span class="si">{</span><span class="n">image_name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    
+
+    <span class="n">polygons</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">contours</span><span class="p">)):</span>
+      <span class="n">polygon</span> <span class="o">=</span> <span class="n">contours</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+      <span class="n">polygon</span> <span class="o">=</span> <span class="n">polygon</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">polygon</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+      <span class="n">polygons</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">polygon</span><span class="p">)</span>
+      
+    <span class="n">add_cluster_details</span><span class="p">(</span><span class="n">composition</span><span class="p">,</span> <span class="n">image_path</span><span class="p">,</span> <span class="n">polygons</span><span class="p">,</span> <span class="n">bbox_arr</span><span class="p">,</span> <span class="n">areas</span><span class="p">,</span> <span class="n">categor</span> <span class="p">,</span> <span class="n">coco_file</span><span class="p">)</span>
+
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">coco_file</span> <span class="o">=</span> <span class="s1">&#39;/content/drive/MyDrive/Amazon Project/clutterized/train.json&#39;</span>
+<span class="n">pipeline</span><span class="p">(</span><span class="n">coco_file</span><span class="p">,</span> <span class="n">rotate90</span><span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+<span class="n">pipeline</span><span class="p">(</span><span class="n">coco_file</span><span class="p">,</span> <span class="n">rotate180</span><span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+<span class="n">pipeline</span><span class="p">(</span><span class="n">coco_file</span><span class="p">,</span> <span class="n">rotate270</span><span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+<span class="n">pipeline</span><span class="p">(</span><span class="n">coco_file</span><span class="p">)</span>
+
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>generating image: 7482dca8-c3e5-11ec-8162-0242ac1c0002.png
+generating image: 788ce988-c3e5-11ec-8162-0242ac1c0002.png
+Skipping This Polygon.. Area of 912.5 is too small
+generating image: 7c63d170-c3e5-11ec-8162-0242ac1c0002.png
+Skipping This Polygon.. Area of 1319.5 is too small
+generating image: 8091dbc0-c3e5-11ec-8162-0242ac1c0002.png
+Skipping This Polygon.. Length of 1 too short
+Skipping This Polygon.. Area of 9.0 is too small
+generating image: 845d2c28-c3e5-11ec-8162-0242ac1c0002.png
+Skipping This Polygon.. Area of 260.0 is too small
+generating image: 8802c57c-c3e5-11ec-8162-0242ac1c0002.png
+Skipping This Polygon.. Area of 373.5 is too small
+generating image: 8c237476-c3e5-11ec-8162-0242ac1c0002.png
+generating image: 903dbcce-c3e5-11ec-8162-0242ac1c0002.png
+Skipping This Polygon.. Area of 1219.0 is too small
+generating image: 94adadd2-c3e5-11ec-8162-0242ac1c0002.png
+Skipping This Polygon.. Area of 300.0 is too small
+generating image: 98e8d9d0-c3e5-11ec-8162-0242ac1c0002.png
+Skipping This Polygon.. Area of 147.0 is too small
+generating image: 9c9aea64-c3e5-11ec-8162-0242ac1c0002.png
+Skipping This Polygon.. Area of 15.5 is too small
+generating image: 9f0f6f22-c3e5-11ec-8162-0242ac1c0002.png
+generating image: a147ffac-c3e5-11ec-8162-0242ac1c0002.png
+generating image: a4b031e6-c3e5-11ec-8162-0242ac1c0002.png
+Skipping This Polygon.. Area of 1168.0 is too small
+generating image: a7073246-c3e5-11ec-8162-0242ac1c0002.png
+generating image: a960b706-c3e5-11ec-8162-0242ac1c0002.png
+Skipping This Polygon.. Area of 158.5 is too small
+generating image: abc9016a-c3e5-11ec-8162-0242ac1c0002.png
+Skipping This Polygon.. Area of 17.0 is too small
+Skipping This Polygon.. Area of 991.0 is too small
+generating image: ae4aea20-c3e5-11ec-8162-0242ac1c0002.png
+Skipping This Polygon.. Length of 1 too short
+Skipping This Polygon.. Area of 850.0 is too small
+generating image: b0d89008-c3e5-11ec-8162-0242ac1c0002.png
+generating image: b35fc760-c3e5-11ec-8162-0242ac1c0002.png
+Skipping This Polygon.. Area of 1192.0 is too small
+generating image: b6018cec-c3e5-11ec-8162-0242ac1c0002.png
+generating image: b8a7008a-c3e5-11ec-8162-0242ac1c0002.png
+Skipping This Polygon.. Area of 351.0 is too small
+Skipping This Polygon.. Area of 1152.0 is too small
+Skipping This Polygon.. Area of 1201.5 is too small
+generating image: bba14a5c-c3e5-11ec-8162-0242ac1c0002.png
+generating image: be59b694-c3e5-11ec-8162-0242ac1c0002.png
+generating image: c1191bcc-c3e5-11ec-8162-0242ac1c0002.png
+Skipping This Polygon.. Area of 114.0 is too small
+generating image: c443c842-c3e5-11ec-8162-0242ac1c0002.png
+Skipping This Polygon.. Area of 300.0 is too small
+Skipping This Polygon.. Area of 1047.0 is too small
+generating image: c7161c0a-c3e5-11ec-8162-0242ac1c0002.png
+Skipping This Polygon.. Area of 813.0 is too small
+Skipping This Polygon.. Area of 1113.5 is too small
+generating image: ca07d30e-c3e5-11ec-8162-0242ac1c0002.png
+generating image: ccfd7f32-c3e5-11ec-8162-0242ac1c0002.png
+Skipping This Polygon.. Area of 1019.0 is too small
+generating image: d00bd048-c3e5-11ec-8162-0242ac1c0002.png
+Skipping This Polygon.. Area of 51.0 is too small
+Skipping This Polygon.. Area of 1058.5 is too small
+generating image: d31ae8d2-c3e5-11ec-8162-0242ac1c0002.png
+generating image: d63c39e4-c3e5-11ec-8162-0242ac1c0002.png
+Skipping This Polygon.. Area of 903.0 is too small
+generating image: d9585464-c3e5-11ec-8162-0242ac1c0002.png
+Skipping This Polygon.. Area of 98.0 is too small
+generating image: dcc44be4-c3e5-11ec-8162-0242ac1c0002.png
+Skipping This Polygon.. Area of 330.0 is too small
+generating image: e00d27d0-c3e5-11ec-8162-0242ac1c0002.png
+Skipping This Polygon.. Area of 1473.5 is too small
+Skipping This Polygon.. Area of 15.0 is too small
+generating image: e369f8fe-c3e5-11ec-8162-0242ac1c0002.png
+Skipping This Polygon.. Area of 90.5 is too small
+Skipping This Polygon.. Area of 1277.0 is too small
+generating image: e6c3a464-c3e5-11ec-8162-0242ac1c0002.png
+Skipping This Polygon.. Area of 9.0 is too small
+Skipping This Polygon.. Length of 1 too short
+generating image: ea2b9486-c3e5-11ec-8162-0242ac1c0002.png
+Skipping This Polygon.. Area of 753.0 is too small
+generating image: ed99efbe-c3e5-11ec-8162-0242ac1c0002.png
+Skipping This Polygon.. Length of 8 too short
+Skipping This Polygon.. Area of 1159.5 is too small
+generating image: f10a5ecc-c3e5-11ec-8162-0242ac1c0002.png
+Skipping This Polygon.. Area of 39.0 is too small
+generating image: f47f2e02-c3e5-11ec-8162-0242ac1c0002.png
+generating image: f800b3de-c3e5-11ec-8162-0242ac1c0002.png
+generating image: fb9ec47c-c3e5-11ec-8162-0242ac1c0002.png
+Skipping This Polygon.. Area of 1135.5 is too small
+generating image: ff485eda-c3e5-11ec-8162-0242ac1c0002.png
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">empty_tote</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;/content/drive/MyDrive/Amazon Project/clutterizer_test/empty_tote.jpeg&#39;</span><span class="p">)</span>
+<span class="n">empty_tote</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">empty_tote</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2RGB</span><span class="p">)</span> <span class="c1">#cv2 reads images in BGR, this functions transforms to RGB</span>
+
+<span class="c1">#copy the image background</span>
+<span class="n">bg</span> <span class="o">=</span> <span class="n">empty_tote</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">height_bg</span><span class="p">,</span> <span class="n">width_bg</span> <span class="o">=</span>  <span class="n">bg</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">bg</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Height of empty tote is: &#39;</span> <span class="p">,</span> <span class="n">height_bg</span><span class="p">,</span> <span class="s1">&#39;width is: &#39;</span><span class="p">,</span> <span class="n">width_bg</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This image is:&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">empty_tote</span><span class="p">),</span> <span class="s1">&#39; with dimensions:&#39;</span><span class="p">,</span> <span class="n">empty_tote</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+
+
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Height of empty tote is:  2358 width is:  3545
+This image is: &lt;class &#39;numpy.ndarray&#39;&gt;  with dimensions: (2358, 3545, 3)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./amazon-vision"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="project-overview.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Amazon Vision Robotics</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="Detectron.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Detectron2</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Tony Alarcon<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
