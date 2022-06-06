@@ -1,3 +1,5 @@
+# Wikipedia Image Captioning 
+
 # Abstract
 
 This paper will attempt to introduce a deep machine learning model that can generate and retrieve the closest caption, given an image. Image captioning is inherently a cross-disciplinary task within the sub fields of Computer Vision and Natural Language Processing (NLP), which has been a popular active area of research within the Artificial Intelligence (AI) community. A successful model deals with object detection/recognition while understanding their relative spatial properties within a given scene/location. In addition, the model should produce human-readable sentences (captions) which requires both syntactic and semantic understanding of the language. To build our image-caption deep learning model, we will utilize the  Wikipedia-based Image Text (WIT) dataset presented by the Google Research as detailed in their SIGIR published work  {cite}`wit`. This rich dataset is a massive curated set of 37.5 million image-text samples across 108 languages. This dataset is ideal as it is the largest open source dataset with 11.5 million unique images over several languages. 
